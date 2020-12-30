@@ -1,0 +1,117 @@
+#entorno {
+	display: block;
+	margin: 0 auto;
+}
+
+#fondo {
+	opacity: 0.3;
+}
+
+body {
+    background-image: url("https://img.pixers.pics/pho(s3:400/FO/15/00/11/39/0/400_FO150011390_fe19f04a0f6d4ef0edcebe01f6e85523.jpg,400,266,jpg)/mantas-de-felpa-tablones-de-madera-color-pastel-textura-o-fondo.jpg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+::selection{
+    color: #fff;
+    background: #FC4CAA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.custom-box.box{
+	max-width: 700px;
+	height: 540px;
+    margin: 40px auto;
+    padding: 5px;
+}
+
+.custom-box {
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.custom-box.hide{
+    display: none;
+}
+
+.btn{
+    padding: 12px 40px;
+    background-color: #29A7EA;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Arial', sanfserif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.result-box{
+    text-align: center;
+}
+
+.result-box.hide{
+    display: none;
+}
+
+.result-box h1{
+    font-size: 50px;
+    line-height: 42px;
+    color: #29A7EA;
+}
+
+.result-box .btn{
+    margin-right: 20px;
+}
+
+.quiz-box .title{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+@media(max-width: 767px){
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    body{
+        padding: 15px;
+    }
+}
+
